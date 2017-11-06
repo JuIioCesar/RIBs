@@ -16,5 +16,13 @@ xcodeTemplate () {
 
 xcodeTemplate
 
-echo "==> ... success!"
-echo "==> RIBs have been set up. In Xcode, select 'New File...' to use RIBs templates."
+if [ -d "$XCODE_TEMPLATE_DIR" ]; then
+    echo "==> ... success!"
+    echo "==> RIBs have been set up. In Xcode, select 'New File...' to use RIBs templates."
+else
+    echo "==> ... error directory creation failed."
+fi
+
+
+
+
